@@ -1,4 +1,4 @@
-# PlantPartner
+# Plant Partner
 
 Raileen Del Rosario <br/>
 Wilson Tu <br/>
