@@ -12,8 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="120dp"
         android:text="Get Started"
+        app:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="Login"
         app:backgroundTint="#4CAF50" />
 
     <TextView
@@ -21,15 +31,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="123dp"
+        android:layout_marginTop="104dp"
+        android:layout_centerInParent="true"
         android:text="Welcome to Plant Partner!"
         android:textSize="25dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:srcCompat="@drawable/image0" />
 
 

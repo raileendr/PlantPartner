@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantPartner">
-        <activity android:name=".PlantActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".PlantActivity" />
         <activity android:name=".QuizActivity" />
         <activity
             android:name=".MainActivity"
