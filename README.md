@@ -1,6 +1,6 @@
 # Plant Partner 🌱
 
-A collaborative effort between:
+A collaborative effort between: <br/>
 Raileen Del Rosario <br/>
 Wilson Tu <br/>
 Kalena Singbandith <br/>
