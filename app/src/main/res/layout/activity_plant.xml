@@ -30,4 +30,26 @@
         app:layout_constraintTop_toBottomOf="@+id/plantText"
         app:layout_constraintVertical_bias="0.193" />
 
+    <TextView
+        android:id="@+id/plantText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantText"
+        android:textSize="20dp"/>
+    />
+
+    <TextView
+        android:id="@+id/plantText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/plantText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plantText"
+        android:textSize="20dp"/>
+    />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

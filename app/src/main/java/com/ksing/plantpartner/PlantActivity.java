@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
@@ -25,9 +28,12 @@ public class PlantActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plant);
+        ArrayList<String> results = (ArrayList<String>)getIntent().getSerializableExtra("RESULTS");
 
         // View IDs
         TextView plant = (TextView)findViewById(R.id.plantText);
+        TextView plant2 = (TextView)findViewById(R.id.plantText2);
+        TextView plant3 = (TextView)findViewById(R.id.plantText3);
         bar = (ProgressBar) findViewById(R.id.loadingPlant);
 
         // Sets a delay on the loading circle
@@ -45,7 +51,24 @@ public class PlantActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                plant.setText("Cactus");
+                System.out.println(results.get(0));
+                if(results.get(1).equals("Low")){
+                    plant.setText("Pothos");
+                    plant2.setText("Prayer Plant");
+                    plant3.setText("Heart-Leaf Philodendron");
+
+                }
+                else if(results.get(1).equals("Medium")){
+                    plant.setText("Spider Plant");
+                    plant2.setText("Peace Lily");
+                    plant3.setText("Croton");
+                }
+                else{
+                    plant.setText("Snake Plant");
+                    plant2.setText("Jade Plant");
+                    plant3.setText("Hibiscus");
+                }
+
                 bar.setVisibility(View.GONE);
 
             }

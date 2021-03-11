@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -24,14 +25,13 @@ public class QuizActivity extends AppCompatActivity {
     // Quiz Choices
     public String Choices[][] = {
             {"Small", "Medium", "Large"},
-            {"Little", "Moderate", "A lot"},
+            {"Low", "Medium", "High"},
             {"Little", "A good amount", "All my free time"},
             {"Daily", "Weekly", "Monthly"}
     };
 
     // User's answers
-    public List<String> answers = new ArrayList<String>();
-
+    public ArrayList<String> answers = new ArrayList<String>();
 
     int questionNum = 0;
     int progressNum = 0;
@@ -72,9 +72,11 @@ public class QuizActivity extends AppCompatActivity {
                 else{
                     questionNum += 1;
                     progressNum += 25;
-                    updateQuestion(questionNum);
                     answers.add(quizAnswer1.getText().toString());
+                    updateQuestion(questionNum);
                     prog();
+                    System.out.println(answers);
+
                 }
             }
         });
@@ -90,9 +92,11 @@ public class QuizActivity extends AppCompatActivity {
                 else{
                     questionNum += 1;
                     progressNum += 25;
-                    updateQuestion(questionNum);
                     answers.add(quizAnswer2.getText().toString());
+                    updateQuestion(questionNum);
                     prog();
+                    System.out.println(answers);
+
                 }
 
             }
@@ -109,9 +113,11 @@ public class QuizActivity extends AppCompatActivity {
                 else{
                     questionNum += 1;
                     progressNum += 25;
-                    updateQuestion(questionNum);
                     answers.add(quizAnswer3.getText().toString());
+                    updateQuestion(questionNum);
                     prog();
+                    System.out.println(answers);
+
                 }
             }
         });
@@ -138,8 +144,12 @@ public class QuizActivity extends AppCompatActivity {
 
     // When the quiz is over, it will move on to the next activity -> PlantActivity
     public void quizOver(){
+        updateQuestion(questionNum);
         Intent intent = new Intent(this, PlantActivity.class);
+        // putExtra allows for data transfer across different activities
+        intent.putExtra("RESULTS", answers);
         startActivity(intent);
+        System.out.println(answers);
     }
 
 }
