@@ -10,10 +10,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:fontFamily="sans-serif"
         android:text="Login"
         android:textSize="35sp"
-        android:layout_marginTop="104dp"
-        android:layout_centerHorizontal="true"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="354dp" />
 
