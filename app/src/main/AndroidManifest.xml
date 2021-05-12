@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantPartner">
-        <activity android:name=".PlantTrackerActivity"></activity>
+        <activity android:name=".PlantCalendar"></activity>
+        <activity android:name=".IndividualPlant" />
+        <activity android:name=".MyPlantsActivity" />
+        <activity android:name=".PlantTrackerActivity" />
         <activity android:name=".HomePageActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".PlantActivity" />

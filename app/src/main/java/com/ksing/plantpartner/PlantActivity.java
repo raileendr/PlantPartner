@@ -17,6 +17,10 @@ public class PlantActivity extends AppCompatActivity {
     ProgressBar bar;
     int total = 0;
 
+    // This plant's data will be passed onto the Home Page Activity
+    public String selectedPlant = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,8 +92,10 @@ public class PlantActivity extends AppCompatActivity {
 
         // Plant Buttons will go to Homepage
         plantButton.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View v) {
+                selectedPlant = plantButton.getText().toString();
                 goToHomePage();
             }
         });
@@ -97,6 +103,7 @@ public class PlantActivity extends AppCompatActivity {
         plantButton2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                selectedPlant = plantButton2.getText().toString();
                 goToHomePage();
             }
         });
@@ -104,6 +111,7 @@ public class PlantActivity extends AppCompatActivity {
         plantButton3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                selectedPlant = plantButton3.getText().toString();
                 goToHomePage();
             }
         });
@@ -113,6 +121,8 @@ public class PlantActivity extends AppCompatActivity {
     // When the user selects a plant, they will be directed to the HomePageActivity
     public void goToHomePage(){
         Intent intent = new Intent(this, HomePageActivity.class);
+        intent.putExtra("plant", selectedPlant);
+        System.out.println(selectedPlant);
         startActivity(intent);
 
     }
