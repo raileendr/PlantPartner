@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#faefec"
     tools:context=".HomePageActivity">
 
     <ImageButton
@@ -18,13 +19,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:srcCompat="@drawable/ic_my_plants" />
 
     <ImageButton
         android:id="@+id/plantTrackerButton3"
         android:layout_width="78dp"
         android:layout_height="60dp"
-        android:background="@drawable/roundedbutton"
+        android:background="#FAEFEC"
         android:contentDescription="Log Plant Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,13 +33,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:srcCompat="@drawable/ic_discover" />
 
     <ImageButton
         android:id="@+id/plantTrackerButton"
         android:layout_width="78dp"
         android:layout_height="60dp"
-        android:background="@drawable/roundedbutton"
+        android:background="#FAEFEC"
         android:contentDescription="Log Plant Activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949"
-        app:srcCompat="@android:drawable/ic_menu_send" />
+        app:srcCompat="@drawable/ic_plant_care" />
 
     <TextView
         android:id="@+id/textView4"
@@ -79,4 +80,63 @@
         app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plantTrackerButton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        app:srcCompat="@drawable/shelf" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="166dp"
+        android:layout_height="254dp"
+        app:layout_constraintBottom_toTopOf="@+id/plantTrackerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/jadeplant" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143"
+        app:srcCompat="@drawable/flowerpot" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="196dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/daco" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="158dp"
+        android:layout_height="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/croton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
