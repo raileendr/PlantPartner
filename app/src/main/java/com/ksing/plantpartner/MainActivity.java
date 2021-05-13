@@ -21,16 +21,16 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
 
         // Creates Login Button to direct to Login Page
-        button = (Button) findViewById(R.id.loginButton);
-        button.setOnClickListener(new View.OnClickListener() {
+        //button = (Button) findViewById(R.id.loginButton);
+        //button.setOnClickListener(new View.OnClickListener() {
 
             //Opens Login Page
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+           // @Override
+            //public void onClick(View v) {
+              //Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                //startActivity(intent);
+            //}
+        //});
 
         // Creates Button to direct to Quiz
         Button quizBtn = findViewById(R.id.quizButton);
