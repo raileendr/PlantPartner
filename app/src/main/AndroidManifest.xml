@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlantPartner">
-        <activity android:name=".PlantCalendar"></activity>
+        <activity android:name=".DiscoverActivity"></activity>
+        <activity android:name=".PlantCalendar" />
         <activity android:name=".IndividualPlant" />
         <activity android:name=".MyPlantsActivity" />
         <activity android:name=".PlantTrackerActivity" />
@@ -20,7 +21,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PlantPartner.NoActionBar">
+            android:theme="@style/Theme.PlantPartner.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

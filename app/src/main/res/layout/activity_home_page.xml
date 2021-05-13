@@ -22,7 +22,7 @@
         app:srcCompat="@drawable/ic_my_plants" />
 
     <ImageButton
-        android:id="@+id/plantTrackerButton3"
+        android:id="@+id/discoverButton"
         android:layout_width="78dp"
         android:layout_height="60dp"
         android:background="#FAEFEC"
