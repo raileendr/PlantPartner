@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/individualPlant"
-        android:layout_width="141dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="64dp"
         android:gravity="center"
